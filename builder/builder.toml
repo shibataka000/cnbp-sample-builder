@@ -1,0 +1,15 @@
+# Buildpacks to include in builder
+[[buildpacks]]
+uri = "my-buildpack"
+
+# Order used for detection
+[[order]]
+    [[order.group]]
+    id = "samples/ruby"
+    version = "0.0.1"
+
+# Stack that will be used by the builder
+[stack]
+id = "com.shibataka000.samples.stacks.bionic"
+run-image = "my-stack-run:bionic"
+build-image = "my-stack-build:bionic"

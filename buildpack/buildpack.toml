@@ -1,0 +1,8 @@
+api = "0.6"
+
+[buildpack]
+id = "samples/ruby"
+version = "0.0.1"
+
+[[stacks]]
+id = "com.shibataka000.samples.stacks.bionic"
